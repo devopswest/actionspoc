@@ -7,10 +7,10 @@ jobs:
     name: Greeting
     runs-on: ubuntu-latest
     steps:
-      -name: Hello World
-       uses: actions/hello-world-javascript-action@v1
-       with:
+      - name: Hello world
+        uses: actions/hello-world-javascript-action@v1
+        with:
          who-to-greet: 'GitHub Actions'
-       id: hello
-      -name: Echo the greeting's time
-       run: echo 'The time was ${{ steps.hello.outputs.time }}. '
+        id: hello
+      - name: Echo the greeting's time
+        run: echo 'The time was ${{ steps.hello.outputs.time }}. '
