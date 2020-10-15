@@ -1,6 +1,6 @@
 name: Greet All
 #This workflow is trigger on pushing event to the repository
-on: workflow_dispatch
+on: [push, workflow_dispatch]
 
 jobs:
   build:
